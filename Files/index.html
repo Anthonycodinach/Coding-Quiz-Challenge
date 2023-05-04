@@ -1,9 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Coding Quiz </title>
-  </head>
 
-  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Assets/style.css">
+  <title>Coding Challenge Quiz</title>
+</head>
+
+<body>
+
+  <div>
+  <p class="timer"> </p> 
+  </div>
+
+  <div class="intro-div">
+    <h2 class="textCenter introHeader"> Coding Challenge Quiz </h2>
+
+    <p class="textCenter introText"> Try to answer the following code-related questions within the time limit. Keep in
+      mind that incorrect answers will penalize your score/time by 10 seconds!</p>
+
+    <button id="start" class="startQuizButton"> Start Quiz </button>
+  </div>
+
+  <div class="question-1-div" style="display: none;">
+
+    <h2 id="question" class="textCenter questionsHeader"> Commonly used data types DO Not include: </h2>
+
+    <button id="answer-1" class="answerChoiceBox"> 1. Strings</button>
+    <button id="answer-2" class="answerChoiceBox"> 2. Booleans</button>
+    <button id="answer-3" class="answerChoiceBox"> 3. Alerts</button>
+    <button id="answer-4" class="answerChoiceBox"> 4. Numbers</button>
+    <p id="result-alert"> </p>
+  </div>
+
+  <div id="score-div" style="display: none;"> 
+    <h2 id="final-score-h2"> Your final score is !</h2>
+    <form>
+      <p class="initials-p"> Enter your initails: <input> </p>
+      <button class="score-button"> Submit </button>
+    </form>
+  </div>
+
+<div class="highscore-div" style="display: none;">
+<h2> High Scores </h2>
+<input> </inout>
+
+<button> Go Back </button>
+<button> Clear High Scores </button>
+
+
+
+
+</div>
+
+
+
+<script src="Script.js"></script>
+</body>
+
+
+</html>

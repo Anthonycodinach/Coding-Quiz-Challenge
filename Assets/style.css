@@ -1,8 +1,118 @@
 * {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1;
+}
 
+.timer {
+    text-align: right;
+    font-size: 40px;
+    margin-right: 120px;
+    margin-top: 30px;
+}
+
+#high-scores {
+    text-align: left;
+    display: inline;
+    font-size: 40px;
+    margin-left: 120px;
+    margin-top: 30px;
 }
 
 .answerChoiceBox {
-    height: 20px;
-    width: 60px;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    margin-right: 30%;
+    height: 50px;
+    width: 130px;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.introHeader {
+    margin: 200px;
+    margin-bottom: 25px;
+    font-size: 70px;
+    padding-top: 100px
+}
+
+.questionsHeader {
+    margin: 200px;
+    margin-bottom: 25px;
+    font-size: 50px;
+    padding-top: 100px;
+    width: 800px;
+    text-align: left;
+}
+
+.introText {
+    font-size: 40px;
+    width: 1000px;
+}
+
+.startQuizButton {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    height: 60px;
+    width: 180px;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+}
+
+.intro-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-1-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result-alert {
+    color: grey;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-right: 680px;
+
+}
+
+#score-div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+}
+
+#final-score-h2 {
+display: block;
+display: flex;
+justify-content: flex-start;
+}
+
+.initials-p {
+display: block;
+margin-top: 20px;
+}
+
+.score-button {
+    margin-top: 20px;
+    height: 60px;
+    width: 180px;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
 }
