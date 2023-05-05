@@ -7,7 +7,7 @@ var introDiv = document.querySelector(".intro-div")
 var timer = document.querySelector(".timer");
 var questionDiv = document.querySelector(".question-1-div")
 var finalScore = document.getElementById("final-score-h2")
-var scoreDiv = document.getElementById("scored-div")
+var scoreDiv = document.getElementById("score-div")
 var highScoreDiv = document.querySelector(".highScoreDiv")
 var storedScoresPEl = document.querySelector(".high-scores")
 var initialsInput = document.querySelector(".initials-p")
@@ -20,11 +20,13 @@ var btn3 = document.getElementById("answer-3")
 var btn4 = document.getElementById("answer-4")
 var startButton = document.querySelector("#start");
 
-submitScoreBtn.addEventListener("click", function () {
-   localStorage.setItem("high-scores", JSON.stringify(highScores));
+submitScoreBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    localStorage.setItem("high-scores", JSON.stringify(highScores));
     // 1 - get initials from HTML
     document.getElementById("input-el")
     // 2 - create object of initials and score
+    var scoresArray;
     var userScore = {
         initials: initialsInput.value,
         score: countDownDuration.textContent
@@ -33,8 +35,6 @@ submitScoreBtn.addEventListener("click", function () {
     // 3 - append new object to existing high score array
     // 4 - set new array in local storage
     scoresArray.push(userScore)
-
-    window.location.href="high-scores.html"
 });
 // Set the countdown timer duration
 var countDownDuration = 75;
@@ -52,14 +52,13 @@ function endGame() {
     // /\ ( should be a function connected to another button that can be used any time during game )
     // { clicking pauses the game timer and can returrne to same question }
 }
-function storeHighScores(event) {
-    event.preventDefault();
+function storeHighScores() {
 
     introDiv.style.display = "none";
     timer.style.display = "none";
     questionDiv.style.display = "none";
-    scoreDiv.style.display = "none";
-    highScoreDiv.style.display = "block";
+    scoreDiv.style.display = "block";
+
 
     storedScoresPEl.textContent = highscores;
     var scoresArray;
@@ -196,4 +195,4 @@ btn2.addEventListener("click", chooseBtn2);
 btn3.addEventListener("click", chooseBtn3);
 btn4.addEventListener("click", chooseBtn4);
 
-
+console.log(submitScoreBtn.target);

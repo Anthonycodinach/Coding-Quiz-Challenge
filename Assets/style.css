@@ -93,9 +93,8 @@
 
 #score-div {
     margin-top: 100px;
+    margin-left: 500px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     font-size: 40px;
 }
 
