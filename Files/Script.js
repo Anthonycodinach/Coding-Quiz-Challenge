@@ -41,12 +41,14 @@ var countDownDuration = 75;
 function endGame() {
     console.log("Game ended!")
     // display input el and prompt user for their initials
+    
     introDiv.style.display = "none";
     timer.style.display = "none";
     questionDiv.style.display = "none";
     scoreDiv.style.display = "block";
 
-    finalScore.textcontent = "Your final score is " + countDownDuration + "!"
+    finalScore.textContent = "Your final score is " + countDownDuration + "!";
+
     // click save score btn -> save initials and countdownduration to local storage
     // display all highscores from local storage 
     // /\ ( should be a function connected to another button that can be used any time during game )

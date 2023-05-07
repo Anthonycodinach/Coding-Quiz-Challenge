@@ -99,9 +99,7 @@
 }
 
 #final-score-h2 {
-display: block;
-display: flex;
-justify-content: flex-start;
+font-size: 30px;
 }
 
 .initials-p {
