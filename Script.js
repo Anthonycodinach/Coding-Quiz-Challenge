@@ -37,7 +37,7 @@ submitScoreBtn.addEventListener("click", function (event) {
     // 3 - append new object to existing high score array
     // 4 - set new array in local storage
     localStorage.setItem("high-scores", JSON.stringify(highScores));
-    window.location.href="high-scores.html"
+    window.location.href = "high-scores.html"
 });
 
 // Set the countdown timer duration
@@ -58,6 +58,9 @@ function endGame() {
     // /\ ( should be a function connected to another button that can be used any time during game )
     // { clicking pauses the game timer and can returrne to same question }
 }
+
+
+
 function storeHighScores() {
 
     introDiv.style.display = "none";
