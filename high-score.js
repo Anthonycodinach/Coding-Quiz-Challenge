@@ -1,3 +1,5 @@
+/* Var elements*/
+
 var highScores = JSON.parse(localStorage.getItem("high-scores"));
 var highScoreP = document.createElement("p")
 
@@ -6,6 +8,7 @@ highScores = []
 
 }
 
+/* displays the high score on the page after score is entered*/
 
 function displayHighScore() {
     for (let index = 0; index < highScores.length; index++) {
@@ -18,6 +21,8 @@ function displayHighScore() {
     }
     }
 
+
+    /* clears the scores after user hits button*/
    function clearScores() {
 
     highScoreP.style.display = "none";
